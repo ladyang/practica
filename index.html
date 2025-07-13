@@ -1,20 +1,263 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Практическое задание</title>
+    <title>Название сайта</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-    <h1>Практическое задание</h1>
-    <ol>
-    <li><a href="task1.html">Практическое задание №1</a></li>  
-    <li><a href="task2.html">Практическое задание №2</a></li>
-     <li><a href="task3.html">Практическое задание №3</a></li>
-     <li><a href="task4.html">Практическое задание №4</a></li>
-      <li><a href="task5new.html">Практическое задание №5</a></li>
-      <li><a href="task5.html">Практическое задание №6</a></li>
-     </ol>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="#" class="logo">The best<span>pizza</span></a>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#" class="nav__link">Главная</a></li>
+                        <li class="nav__item"><a href="#menu" class="nav__link">Меню</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">О нас</a></li>
+                        <li class="nav__item"><a href="#reviews" class="nav__link">Отзывы</a></li>
+                        <li class="nav__item"><a href="#contacts" class="nav__link">Контакты</a></li>
+                    </ul>
+                </nav>
+                <button class="menu-toggle" aria-label="Меню">
+                    <span class="menu-toggle__line"></span>
+                    <span class="menu-toggle__line"></span>
+                    <span class="menu-toggle__line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero__title">Pizza MargaRita</h1>
+                <p class="hero__subtitle">Самая вкусная пицца круглые сутки</p>
+                <div class="hero__buttons">
+                    <a href="#menu" class="btn btn--primary">Каталог</a>
+                    <a href="#contacts" class="btn btn--outline">Найти нас</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about__inner">
+                    <div class="about__image">
+                        <img src="images/картинка пиццы4.jpg" alt="">
+                    </div>
+                    <div class="about__content">
+                        <h2 class="section-title">О пицце</h2>
+                        <p class="about__text">Пицца — традиционное итальянское блюдо, изначально в виде круглой дрожжевой лепёшки, выпекаемой с уложенной сверху начинкой из томатного соуса, сыра и зачастую других ингредиентов, таких как мясо, овощи, грибы и прочие продукты. </p>
+                        <p class="about__text">Родиной пиццы считается Неаполь, где в этом городе в XVII веке появилось уникальное сочетание плоской лепёшки, выпекаемой в печи, с разнообразными наполнителями и томатами. Важнейшим ингредиентом блюда является сыр моцарелла буффало. </p>
+                        <ul class="about__features">
+                            <li class="feature-item">
+                                <i class="fa-solid fa-pizza-slice"></i> &nbsp;
+                                <span> Быстрое приготовление. Тонкое тесто готовится быстро, а при выпекании при высоких температурах пицца готова за 5–15 минут. </span>
+                            </li>
+                            <li class="feature-item">
+                                <i class="fa-solid fa-pizza-slice"></i> &nbsp;
+                                <span> Пицца имеет несколько преимуществ, которые связаны с вкусовыми качествами, пользой для здоровья и удобством употребления.</span>
+                            </li>
+                            <li class="feature-item">
+                                <i class="fa-solid fa-pizza-slice"></i> &nbsp;
+                                <span> Вкусовые качества. Сочетание вкусов. Сладковатое тесто, солёный сыр, кислая томатная основа, пряные специи — всё это создаёт уникальный вкусовой букет. 
+</span>
+                            </li>
+                            <li class="feature-item">
+                                <i class="fa-solid fa-pizza-slice"></i> &nbsp;
+                                <span> Разнообразие начинок. Существуют тысячи рецептов пиццы, каждый может выбрать для себя подходящий вариант.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="menu" class="menu">
+            <div class="container">
+                <h2 class="section-title">Католог</h2>
+                <div class="menu__content active" id="coffee">
+                    <div class="menu__grid">
+                        <div class="menu-item">
+                            <div class="menu-item__header">
+                                <h3 class="menu-item__title">Маргарита</h3>
+                                <span class="menu-item__price"> 477 </span>
+                            </div>
+                            <p class="menu-item__description">В состав входят томатный соус, моцарелла и орегано.</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item__header">
+                                <h3 class="menu-item__title">Маринара</h3>
+                                <span class="menu-item__price"> 744 </span>
+                            </div>
+                            <p class="menu-item__description">В основе — томатный соус, чеснок и базилик.</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item__header">
+                                <h3 class="menu-item__title">Четыре сезона</h3>
+                                <span class="menu-item__price"> 474 </span>
+                            </div>
+                            <p class="menu-item__description">Включает томатный соус, моцареллу, грибы, ветчину, артишоки, оливки и орегано.</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item__header">
+                                <h3 class="menu-item__title">Карбонара</h3>
+                                <span class="menu-item__price">447</span>
+                            </div>
+                            <p class="menu-item__description">В состав входят томатный соус, моцарелла, пармезан, яйца, бекон.</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item__header">
+                                <h3 class="menu-item__title">Четыре сыра</h3>
+                                <span class="menu-item__price"> 747</span>
+                            </div>
+                            <p class="menu-item__description">В основе — томатный соус, моцарелла, пармезан, сыр горгонзола, артишоки и орегано.</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item__header">
+                                <h3 class="menu-item__title">Крудо</h3>
+                                <span class="menu-item__price">477</span>
+                            </div>
+                            <p class="menu-item__description">В состав входят томатный соус, моцарелла и пармская ветчина.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="reviews" class="reviews">
+            <div class="container">
+                <h2 class="section-title">Отзывы</h2>
+                <div class="reviews__slider">
+                    <div class="review">
+                        <div class="review__rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review__text">Очень вкусная пицца</p>
+                        <div class="review__author">
+                            <img src="images/я.jpg" alt=""
+                                class="review__photo">
+                            <span class="review__name">Анжела</span>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <div class="review__rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review__text">Круто, все понравилось, спасибо</p>
+                        <div class="review__author">
+                            <img src="images/кар.webp" alt=""
+                                class="review__photo">
+                            <span class="review__name">Карина</span>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <div class="review__rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review__text">Лучшая pizza</p>
+                        <div class="review__author">
+                            <img src="images/Аш.webp" alt=""
+                                class="review__photo">
+                            <span class="review__name">Ашот</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacts" class="contacts">
+            <div class="container">
+                <div class="contacts__inner">
+                    <div class="contacts__info">
+                        <h2 class="section-title">Контакты</h2>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt contact-icon"></i>
+                            <span>г. Георгиевск, ст. Незлобная, ул. Ленина, 1</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone contact-icon"></i>
+                            <span>тел. 4-44-44 </span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope contact-icon"></i>
+                            <span>MargaRita@Mmail.ru</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock contact-icon"></i>
+                            <span>Ежедневно 09:00 - 21:00</span>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-link" aria-label="Telegram"><i
+                                    class="fab fa-telegram-plane"></i></a>
+                        </div>
+                    </div>
+                    <div class="contacts__map">
+                       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2864.2374166977493!2d43.3681769884622!3d44.11972489652571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40570eb2ffd59fb3%3A0xfaf91f121f8a3b71!2z0YPQuy4g0JvQtdC90LjQvdCwLCAxLCDQndC10LfQu9C-0LHQvdCw0Y8sINCh0YLQsNCy0YDQvtC_0L7Qu9GM0YHQutC40Lkg0LrRgNCw0LksIDM1NzgwNw!5e0!3m2!1sru!2sru!4v1752415846199!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__logo">
+                    <a href="#" class="logo">Pizza <span>MargaRita</span></a>
+                    <p class="footer__text">Самая вкусная пицца круглые сутки</p>
+                </div>
+                <div class="footer__nav">
+                    <h3 class="footer__title">Навигация</h3>
+                    <ul class="footer__list">
+                        <li><a href="#" class="footer__link">Главная</a></li>
+                        <li><a href="#menu" class="footer__link">Меню</a></li>
+                        <li><a href="#about" class="footer__link">О нас</a></li>
+                        <li><a href="#reviews" class="footer__link">Отзывы</a></li>
+                        <li><a href="#contacts" class="footer__link">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer__subscribe">
+                    <h3 class="footer__title">Подписка</h3>
+                    <p class="footer__text">Подпишитесь на наши новости и акции</p>
+                    <form class="subscribe-form">
+                        <input type="email" placeholder="Ваш email" class="subscribe-input">
+                        <button type="submit" class="subscribe-btn"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">© Copyright 2025 Все права защищены. Сайт для Маргаритки от ее мамы </p>
+            </div>
+        </div>
+    </footer>
+
 
 </body>
+
 </html>
